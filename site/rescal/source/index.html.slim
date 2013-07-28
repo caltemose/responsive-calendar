@@ -1,0 +1,71 @@
+---
+title: Responsive Calendar Layout
+---
+
+
+article class="rescal"
+  header calendar header here
+  
+  ul
+    /! an empty day list item 
+    li data-date="2013-06-11"
+      header
+        h1 11 
+        aside Sunday
+
+    /! all-day event
+    li data-date="2013-06-12"
+      header
+        h1 12
+        aside Monday
+      ul
+        /! an all-day event
+        li class="all-day"
+          details
+            summary All Day Event Title
+            dl
+              dt Time
+              dd 
+              dt Day
+              dd Wednesday June 12
+              dt Location
+              dd Whereever
+              dt Description
+              dd This is the lengthy description of this here event.
+
+
+    /! a day with events list item 
+    li data-date="2013-06-13"
+      header
+        h1 13
+        aside Tuesday
+      ul
+        /! an event
+        li
+          details
+            summary Event Title
+            dl
+              dt Time</dt>
+              dd 13:00-14:30
+              dt Day
+              dd Wednesday June 12
+              dt Location
+              dd 
+                a href="#" Somewhere Else
+              dt Description
+              dd This is the lengthy description of this here event.
+        /! an event
+        li
+          details
+            summary Another Event Title
+            dl
+              dt Time</dt>
+              dd 18:00-18:30
+              dt Day
+              dd Wednesday June 12
+              dt Location
+              dd 
+                a href="#" Somewhere Else
+              dt Description
+              dd This is the lengthy description of this here event.
+            
